@@ -16,8 +16,9 @@ Frontend:
 **
 
 Next.js (React)
-Redux Toolkit
+
 Axios (for API requests)
+
 CSS/Styled Components
 
 
