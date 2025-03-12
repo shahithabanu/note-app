@@ -3,12 +3,19 @@ A full-stack notes-taking application built with Next.js (React) for the fronten
 ** Features**
 
 User Authentication (Sign Up & Sign In)
+
 CRUD Operations for Notes (Create, Read, Update, Delete)
+
 Axios for API Calls
+
 FastAPI for Backend with RESTful APIs
+
 MySQL Database for storing users and notes
+
 Responsive UI with styled components
+
 Rich Text Editor for Notes 
+
 
 **
 Tech Stack
