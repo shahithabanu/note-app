@@ -1,0 +1,120 @@
+/* SignUp.module.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #794d4e 0%, #fad0c4 100%);
+  padding: 20px;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  animation: fadeIn 0.3s ease;
+}
+
+.heading {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #ff3385;
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.inputField:focus {
+  border: 2px solid #ff66b2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 102, 178, 0.3);
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #ff66b2, #ff3385);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.submitButton:hover {
+  background: linear-gradient(135deg, #ff3385, #ff1a75);
+  transform: translateY(-2px);
+}
+
+.loginButton {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #fff;
+  color: #ff3385;
+  border: 2px solid #ff3385;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #ff3385;
+  color: white;
+}
+
+.success {
+  color: #28a745;
+  background-color: #d4edda;
+  padding: 10px;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  padding: 10px;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.errorText {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Add animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

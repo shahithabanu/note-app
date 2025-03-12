@@ -1,0 +1,121 @@
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #794d4e 0%, #fad0c4 100%);
+  padding: 20px;
+}
+
+/* Form container */
+.formContainer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff3385;
+  font-weight: bold;
+}
+
+/* Input fields */
+.inputField {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.inputField:focus {
+  border-color: #ff66b2;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 102, 178, 0.5);
+}
+
+/* Sign-in button */
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background: #ff66b2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background: #ff3385;
+}
+
+/* Register button */
+ 
+  .registerButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #ff3385;
+    border: 2px solid #ff3385;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .registerButton:hover {
+    background-color: #ff3385;
+    color: white;
+  }
+
+/* Error message */
+.error {
+  color: #ff3b3b;
+  background: #fde2e2;
+  padding: 10px;
+  border: 1px solid #ff3b3b;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Toast notifications */
+.Toastify__toast {
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50;
+}
+
+.Toastify__toast--error {
+  background-color: #ff3b3b;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

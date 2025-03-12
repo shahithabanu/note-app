@@ -1,0 +1,14 @@
+# Node.js
+node_modules/
+.next/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+
+# OS and editor files
+.DS_Store
+.vscode/

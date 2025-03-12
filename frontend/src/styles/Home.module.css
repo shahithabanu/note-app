@@ -1,0 +1,164 @@
+
+.container {
+  padding: 40px;
+  background: linear-gradient(135deg, #794d4e 0%, #fad0c4 100%);
+  height: 100vh;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.addNoteButton {
+  background-color: #0c36f1; /* Blue */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size:20px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px; 
+  right: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.addNoteButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.addNoteForm {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 600px;
+  z-index: 100;
+}
+
+.addNoteForm {
+  color: #0b08cc;  /* Pink */
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 97%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.quillEditor {
+  width:100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  height: 100%;
+  outline: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f11d36;
+  font-size: 16px;
+}
+
+.primary {
+  color: white;
+}
+
+.cancel {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #75db16;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  color: #333;
+  margin-left: 10px;
+  border: none;
+}
+
+.notesList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns in a row */
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.noNotesMessage {
+  position: absolute;
+  top: 200px;
+  right: 500px;
+  font-size: 21px;
+  color: #150566;
+  margin-top: 20px;
+ 
+}
+
+
+
+.noteCard {
+  background-color: #e8d9d4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.noteCard:hover {
+  transform: translateY(-5px);
+}
+
+.noteCardTitle {
+  color: #333333; /* Pink */
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.noteContent {
+  font-size: 1rem;
+  color: #555;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btnEdit,
+.btnDelete {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border:none;
+}
+
+.btnEdit {
+  background-color: #4169E1; /* Pink */
+  color: white;
+}
+
+.btnDelete {
+  background-color: #ff4d4d; /* Red */
+  color: white;
+}
